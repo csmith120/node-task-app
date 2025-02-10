@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "mongodb": "^3.7.4",
-    "mongoose": "^5.13.23"
+    "mongoose": "^5.13.23",
+    "validator": "^10.9.0"
   }
 }
