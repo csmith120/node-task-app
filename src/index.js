@@ -1,12 +1,24 @@
 const express = require('express')
 require('./db/mongoose')
-const User = require('./model/user')
-const Tasks = require('./model/task')
 const userRouter = require('./routers/user')
 const taskRouter = require('./routers/task')
 
 const app = express()
 const port = process.env.PORT || 3000
+
+//app.use((req, res, next) => {
+//    if (req.method === 'GET') {
+//        res.send('GET requst are disabled')
+//    } else {
+//        next()
+//    }
+//})
+
+app.use((req, res, next) => {
+    
+    res.status(503).send('server is under mataines please try again later')
+    
+})
 
 app.use(express.json())
 app.use(userRouter)
