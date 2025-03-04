@@ -14,11 +14,9 @@ const port = process.env.PORT || 3000
 //    }
 //})
 
-app.use((req, res, next) => {
-    
-    res.status(503).send('server is under mataines please try again later')
-    
-})
+//app.use((req, res, next) => {
+//    res.status(503).send('server is under mataines please try again later')
+//})
 
 app.use(express.json())
 app.use(userRouter)
