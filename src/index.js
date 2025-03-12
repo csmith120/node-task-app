@@ -13,7 +13,6 @@ const port = process.env.PORT || 3000
 //        next()
 //    }
 //})
-
 //app.use((req, res, next) => {
 //    res.status(503).send('server is under mataines please try again later')
 //})
