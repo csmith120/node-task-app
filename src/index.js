@@ -21,9 +21,9 @@ const port = process.env.PORT || 3000
 //        cb(undefined, true)
 //    }
 //})
-app.post('/upload', upload.single('upload'), (req, res) => {
-    res.send()
-})
+//app.post('/upload', upload.single('upload'), (req, res) => {
+//    res.send()
+//})
 
 app.use(express.json())
 app.use(userRouter)
