@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000
 //        fileSize: 1000000
 //    },
 //    fileFillter(req, file, cb) {
-//        if (file.originalname.match(/\.(doc|docx)$/)){
+//        if (!file.originalname.match(/\.(doc|docx)$/)){
 //            return cb(new Error('please upload a word doc'))
 //        }
 //
